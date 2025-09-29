@@ -143,3 +143,54 @@ grade_requirements = { 9: ['Bio', 'Math', 'English', 'History', 'PE'],
                       11:['Physics', 'Math', 'English', 'History', 'PE'],
                       12: ['Math', 'English', 'PE']
                       }
+
+print(" ")
+
+# Boolean Expressions: True or False
+print(10 > 5) # True
+print(5 > 10) # False
+print(10 >= 10) # True
+print(7 <= 5) # False
+print(5 == 5) # True
+print(5 != 5) # False
+print('a' > 'b') # False
+print('cat' < 'cot') # o is GREATER bc it comes LATER
+print('T' == 't') # False (calse-sensitive)
+print('T' < 't') # True, capital letters come first
+
+print(" ")
+
+# Checking equality vs. identity
+list_a = [1, 2, 3]
+list_b = [1, 2, 3]
+print(list_a == list_b) # True, list contains same items 
+print(list_a is list_b) # False, not the same object
+# Typically only use "is" when comparing to None, True, False
+boolean_a = True
+print(boolean_a is True) # True
+print(boolean_a is not False) # True
+
+print(" ")
+
+# Compound boolean operators: and, or, not
+boolean_b = True
+boolean_c = False
+print(boolean_a and boolean_b) # True
+print(boolean_b and boolean_c) # False
+print(boolean_a or boolean_c) # True
+print(boolean_a and (boolean_b or boolean_c)) # True 
+
+print(" ")
+
+# Conditionals/branching/selection
+def can_drive(age):
+    if (age  >= 17):
+        print('You can get a license in NY state!')
+    elif (age == 16):
+        print('You cang get a permit in NY state. Take some lessons!')
+    else: 
+        print("Too young to drive.")
+# Test out function with different values
+can_drive(18)
+can_drive(16)
+can_drive(13)
